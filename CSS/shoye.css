@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image: url(luosifen/%E9%A5%AE%E9%A3%9F%E7%B1%BB%E7%B4%A0%E6%9D%90/%E8%83%8C%E6%99%AF.gif);/*添加网页整个背景*/
+	text-align: center;
+}
+p/*修改所有p标签的*/{
+	font-size: 30px;/*字体大小*/
+	text-align: center;/*水平位置-居中*/
+	font-family: "华文楷体";
+}
+.gudin/*固定在左边*/ {
+    position: fixed;/*固定*/
+	text-align:left;/*左边*/
+    bottom: 10px;/*距离*/
+}
+.daohtlogo/*导航条上方的logo图片*/{
+	font-size: 16px;/*字体大小*/
+	color: #666;/*修改颜色*/
+	text-align: left;/*修改位置*/
+}
+.ceshi/*临时使用*/{
+	font-size: 36px;/*字体大小*/
+	color: #F00;/*修改颜色*/
+	}
+	
+.daohtlogo-wenzi/*logo下方的欢迎文字*/{
+	color: #000;/*修改颜色*/
+	font-size: 36px;/*大小*/
+	text-align: center;/*位置*/
+	font-family: "华文楷体";
+	}
+.kaozuo/*内容靠左*/{
+	text-align:left;}
+.kaozyou/*内容靠右*/{
+	text-align:right;}
+	
+.go-top/*返回顶部的按钮css*/ {
+    position: fixed;	        /* 设置fixed固定定位 */
+    bottom: 15px;		/* 距离浏览器窗口下边框20px */
+    right: 20px;		/* 距离浏览器窗口右边框20px */
+  }
+  .go-top a /*返回顶部的按钮css*/{
+    display: block;			/* 将<a>标签设为块元素，用于美化样式 */
+    text-decoration: none;		/* 取消超链接下画线 */
+    color: #246499;			/* 设置文本颜色 */
+    background-color: #e9fbff;		/* 设置背景颜色 */
+    border: 1px solid #ccc;		/* 设置边框样式 */
+    padding: 14px 18px;			/* 设置内边距 */
+    border-radius: 20px;			/* 设置圆角矩形 */
+    letter-spacing: 2px;		/* 设置文字间距 */
+  }
+
+.d3{
+	font-size:30px;/*修改文字大小*/}
+
+
+.dsj-top /*联系作者的悬浮按钮*/{
+    position: fixed;	        /* 设置fixed固定定位 */
+    bottom: 90px;		/* 距离浏览器窗口下边框50px */
+    right: 20px;		/* 距离浏览器窗口右边框20px */
+  }
+  .dsj-top a {
+    display: block;			/* 将<a>标签设为块元素，用于美化样式 */
+    text-decoration: none;		/* 取消超链接下画线 */
+    color: #246499;			/* 设置文本颜色 */
+    background-color: #e9fbff;		/* 设置背景颜色 */
+    border: 1px solid #ccc;		/* 设置边框样式 */
+    padding: 14px 18px;			/* 设置内边距 */
+    border-radius: 20px;			/* 设置圆角矩形 */
+    letter-spacing: 2px;		/* 设置文字间距 */
+  }
+  
+.dsjfkui-top /*用户反馈的悬浮按钮*/{
+    position: fixed;	        /* 设置fixed固定定位 */
+    bottom: 315px;		/* 距离浏览器窗口下边框315px，上移＋75 */
+    right: 20px;		/* 距离浏览器窗口右边框20px */
+  }
+  .dsjfkui-top a {
+    display: block;			/* 将<a>标签设为块元素，用于美化样式 */
+    text-decoration: none;		/* 取消超链接下画线 */
+    color: #246499;			/* 设置文本颜色 */
+    background-color: #e9fbff;		/* 设置背景颜色 */
+    border: 1px solid #ccc;		/* 设置边框样式 */
+    padding: 14px 18px;			/* 设置内边距 */
+    border-radius: 20px;			/* 设置圆角矩形 */
+    letter-spacing: 2px;		/* 设置文字间距 */}
+  
+
+.dsjQQ-top /*联系作者QQ的悬浮按钮*/{
+    position: fixed;	        /* 设置fixed固定定位 */
+    bottom: 240px;		/* 距离浏览器窗口下边框50px */
+    right: 20px;		/* 距离浏览器窗口右边框20px */
+  }
+  .dsjQQ-top a {
+    display: block;			/* 将<a>标签设为块元素，用于美化样式 */
+    text-decoration: none;		/* 取消超链接下画线 */
+    color: #246499;			/* 设置文本颜色 */
+    background-color: #e9fbff;		/* 设置背景颜色 */
+    border: 1px solid #ccc;		/* 设置边框样式 */
+    padding: 14px 18px;			/* 设置内边距 */
+    border-radius: 20px;			/* 设置圆角矩形 */
+    letter-spacing: 2px;		/* 设置文字间距 */}
+
+.dsjwx-top /*联系作者微信的悬浮按钮*/{
+    position: fixed;	        /* 设置fixed固定定位 */
+    bottom: 165px;		/* 距离浏览器窗口下边框50px */
+    right: 20px;		/* 距离浏览器窗口右边框20px */
+  }
+  .dsjwx-top a {
+    display: block;			/* 将<a>标签设为块元素，用于美化样式 */
+    text-decoration: none;		/* 取消超链接下画线 */
+    color: #246499;			/* 设置文本颜色 */
+    background-color: #e9fbff;		/* 设置背景颜色 */
+    border: 1px solid #ccc;		/* 设置边框样式 */
+    padding: 14px 18px;			/* 设置内边距 */
+    border-radius: 20px;			/* 设置圆角矩形 */
+    letter-spacing: 2px;		/* 设置文字间距 */	}
+
+.xuanfugudin/*固定在左边*/ {
+    position: fixed;/*固定*/
+	text-align:center;
+    bottom: 10px;
+	nav-up:100px;}
+	
+.sxuanfugudin/*固定在上边*/ {
+    position: fixed;/*位置固定*/
+	text-align:center;/*水平对齐-居中*/
+	nav-up:0px;/**/
+	}	
+		
+.d4{
+	color: #999; /*修改文字颜色-灰色*/
+	font-size: 30px;/*文字大小*/
+	font-weight: bold;
+	font-family: "华文楷体";
+}	
+
+.img1{
+	float:right;
+	margin-left:10px;}	
+.daxiao{
+	font-size:50px;}	
+.beij{
+	font-size:30px;
+	text-align:center;
+	background-color:#F60;}
+.yanse{
+	background-color:#F66;}	
+
+.zbiang{
+	padding-left:30px;
+	padding-right:30px;
+	background:#e9fbff url(self.jpg) no-repeat bottom right;
+	}	
+
+
+.zbiang{
+	padding-left: 30px;
+	padding-right: 30px;
+	background: #e9fbff url(self.jpg) no-repeat bottom right;
+	text-align: center;
+	}
+
+.tuphewenzi/*文字图片背景*/{
+	 background-image:url("datubeijing/datuimg (6).jpg");/*选择图片*/
+    background-repeat: no-repeat;/*取消图片重复*/
+	background-size:100%100%;}	
+	
+.tuphewenzi-jie/*文字图片背景*/{
+	background-image: url("datubeijing/datuimg (1).jpg");/*选择图片*/
+	background-repeat: no-repeat;/*取消图片重复*/
+	height:100%;
+	background-size:100%100%;
+	color: #F7F7F7;
+	font-size: 36;
+}		
+	
+
+.weibubanquan{/*版尾*/
+	text-align:left;/*靠左*/
+	background: #e9fbff url(self.jpg) no-repeat bottom right;}
+.weibubanquan-img/*版尾的图片*/{
+	text-align:right;
+	background: #e9fbff url(self.jpg) no-repeat bottom right;}	
+.weibubanquan-wenzi/*..文字*/{
+	text-align:center;/*靠左*/
+	background: #e9fbff url(self.jpg) no-repeat bottom right;
+	font-size: 30px/*文字大小*/;
+	color:#000;
+	text-decoration: none;/*取消超链接下划线*/
+}		
+.weibubanquan-wenzi-p{
+	text-align: left;/*靠左*/
+	font-size: 20px/*文字大小*/;
+	font-family: "隶书";
+	text-decoration:none;/*取消超链接下划线*/
+	color:#000;
+}
+
+
+
+.mubanceshi{
+	font-size:500px;
+	}
+
+
+	
+*{
+margin:0;
+padding:0;
+}
+.clear:after {
+clear: both;
+content: ".";
+display: block;
+height: 0;
+visibility: hidden;
+}
+nav{
+display:inline-block;
+border:1px solid #505255;
+border-bottom: 1px solid #282C2F;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+margin:50px;
+-webkit-box-shadow:1px 1px 3px #292929;
+-moz-box-shadow:1px 1px 3px #292929;
+}
+li{
+list-style:none;
+float:left;
+border-right: 1px solid #2E3235;
+position: relative;
+/*background: -moz-linear-gradient(top, #fff, #555D5F 2% ,#555D5F 50%,#3E4245 100%);
+background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), color-stop(2%, #555D5F), color-stop(50%, #555D5F),to(#3E4245));*/
+background:#555D5F;
+}
+li:hover{
+/*background: -moz-linear-gradient(top, #fff, #3E4245 2% ,#555D5F 80%,#555D5F 100%);
+background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), color-stop(2%, #3E4245), color-stop(80%, #3E4245),to(#555D5F));*/
+background:#3E4245;
+-moz-transition: background 1s ease-out;
+-webkit-transition: background 1s ease-out;
+}
+li a{
+display:block;
+height:40px;
+line-height:40px;
+padding:0 30px;
+font-size:12px;
+color:#fff;
+text-shadow: 0px -1px 0px #000;
+text-decoration:none;
+white-space:nowrap;
+border-left: 1px solid #999E9F;
+border-top: 1px solid #999E9F;
+-moz-border-top-left-radius: 2px;
+-webkit-border-top-left-radius: 2px;
+z-index:100;
+}
+li > a{
+position:relative;
+}
+li.first a{
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-bottomleft: 4px;
+-webkit-border-top-left-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+}
+li.last{
+border-right: 0 none;
+}
+dl{
+position:absolute;
+display:block;
+top:40px;
+left: -25px;
+width:165px;
+background:#222222;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-webkit-box-shadow:1px 1px 3px #292929;
+-moz-box-shadow:1px 1px 3px #292929;
+z-index:10;
+}
+li:hover dl{
+top:50px;
+display:block;
+width:145px;
+padding:10px;
+}
+dl a{
+background:transparent;
+border:0 none;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-transition: background 0.5s ease-out;
+-webkit-transition: background 0.5s ease-out;
+z-index:50;
+}
+dl a:hover{
+color:#FFF;
+background:#999E9F;
+-moz-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+-webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+dd{
+margin-top:-40px;
+opacity:0;
+width:145px;
+-webkit-transition-property:all;
+/*-webkit-transition-timing-function: cubic-bezier(5,0,5,0);*/
+-moz-transition-property: all;
+/*-moz-transition-timing-function: cubic-bezier(5,0,5,0);*/
+/*-webkit-transition-delay:5s;
+-moz-transition-delay:5s;*/
+}
+li:hover dd{
+margin-top:0;
+opacity:1;
+}
+li dd:nth-child(1){
+-webkit-transition-duration: 0.1s;
+-moz-transition-duration: 0.1s;
+}
+li dd:nth-child(2){
+-webkit-transition-duration: 0.2s;
+-moz-transition-duration: 0.2s;
+}
+li dd:nth-child(3){
+-webkit-transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+}
+li dd:nth-child(4){
+-webkit-transition-duration: 0.4s;
+-moz-transition-duration: 0.4s;
+}
+dt{
+display:none;
+margin-top:-25px;
+padding-top:15px;
+height:10px;
+}
+li:hover dt{
+display:block;
+}
+.Darrow{
+text-align:center;
+float:right;
+margin:18px 10px 0 0;
+border-width:5px;
+border-color:#FFF transparent transparent transparent;
+border-style:solid;
+width:0;
+height:0;
+line-height:0;
+overflow:hidden;
+cursor:pointer;
+text-shadow: 0px -1px 0px #000;
+-webkit-box-shadow:0px -1px 0px #000;
+-moz-box-shadow:0px -1px 0px #000;
+}
+.arrow{
+margin:0 auto;
+margin-top:-5px;
+display:block;
+width:10px;
+height:10px;
+background:#222222;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+}
+
+
