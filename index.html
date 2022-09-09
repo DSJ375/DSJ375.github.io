@@ -7,32 +7,70 @@
  <meta name="keywords" content="DSJIE,DSJ,DSJIE官网">
     <meta name="description" content="DSJIE官网主打娱乐">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
 <link rel="shortcut icon" href="file:///F|/网站/img/wangyelogo.ico" />
-	<style>
 	
-		/* 整个网页取消间隙 */
+	
+</head>
+<style>
+	
 	* {
 		margin: 0;
 		padding: 0;
+		text-decoration: none;
+		list-style: none;
 	}
-	
-	body {
+	.main {
 		width: 80%;
-		background-image: url(../img/bg9.gif);
-		
-		margin: 0 auto;
+		margin: auto;
+		margin-top: 0.625rem;
 	}
-	
-	
+	.header,.nav,.container,.footer {
+		/* 头部 导航 主体 底部 四个盒子都要浮动 */
+		
+		float: left;
+		/* 铺满浏览器*/
+		width: 100%;
+		/* 对其 */
+		box-sizing: border-box;
+	}
+	.header {
+		background-color: #ccc;
+		padding: 1.25rem;
+		text-align: center;
+	}
+	.header img {
+		width: 9.375rem;
+		float: left;
+		
+	}
+	.header h1 {
+		margin-top: 2.5625rem;
+		
+		
+	}
+	.container {
+		margin-top: 10px;
+	}
+	.navbar{
+	    width: 100%;
+	    height: 3.75rem;
+	    background-color: #fff;
+		
+		/* 字体加粗 */
+		font-weight: bold;
+	    /* 盒子阴影 */
+	    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+	}
 	
 	div  {
-		border-radius: 10px;/* 四边圆角10 */
+		border-radius: 0.625rem;/* 四边圆角10 */
 		/* background-image: url(../img/bg9.gif); */
 		/* text-indent: 1.5em;/* 首行空字符 */ */
 	}
 	ol {
-		border-radius: 10px;/* 四边圆角10 */
+		border-radius: 0.625rem;/* 四边圆角10 */
 		/* text-indent: 1.5em;/* 首行空字符 */ */
 	}
 	li{
@@ -45,49 +83,15 @@
 		color: #000000;
 	}
 	
-	.xindahezi {
-		margin: 15px auto;
-		background-color: #fff;
-		/* 盒子阴影 */
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-	}
-	
-	/* 欢迎导航 */
-	.huanying {
-		background-image: url(../img/bg9.gif);
-	}
-	.huanyingxiaozzi {
-		color: dimgray;		/* 灰色字体 */
-		font-size: 14px;	/* 字体大小 */
-		font-weight: bold;	/* 加粗 */
-	}
-	.huanyingyonghu {
-	text-align: center;
-	}
-	.huanyingh2 {
-		text-align: center;
-	}
-	.huanying img {
-			width: 150px;
-			height: auto;
-			
-		}
-	.huanying img:hover {
-		
-	}
-		
-		/* 欢迎导航结束 */
-		
-		/* 二级导航 */
 	.navbar{
 	    width: 100%;
-	    height: 60px;
+	    height: 3.75rem;
 	    background-color: #fff;
 		
 		/* 字体加粗 */
 		font-weight: bold;
 	    /* 盒子阴影 */
-	    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
 	}
 	
 	.navbar .nav{
@@ -105,7 +109,7 @@
 	    /* 让子元素平均分配宽度 */
 	    justify-content: space-around;
 	    width: 100%;
-	    height: 100%;
+	    height: 111%;
 	}
 	.navbar .nav ul > li{
 	    width: 100%;
@@ -212,450 +216,193 @@
 	    left: 80%;
 	    background-color: #1169d4;
 	}
-		/* 二级导航结束 */
+	
+	.lside,.content,.rside {
+		width: 32%;
+		float: left;
+		/* padding-top: 1px; */
+		/* 上 */
+		/* padding-bottom: 1px;	 */
+		/* 下 */
+		/* border: 4px solid #000000;	 */
+		/* 描边框 */
 		
-		/* 新官网内容 */
-		.xinneirong {
+	}
+	
+		
+	}
+	/* 左右两边固定宽度200 */
+	.lside h2 {
+	text-align: center;
+	}
+	.wenxintishi {
+		text-align: center;
+		font-size: 1.875rem;
+	}
+	
+	.content h2 {
+		text-align: center;
+		
+		
+	}
+	.rside h2 {
+		text-align: center;
+	}
+	
+	.footer {
+		padding: 0.625rem;
+		background: #ccc;
+		text-align: center;
+	}
+	
+	
+	.weibawenzi {
+		text-align: center;
+	}
+	.weibawenzi p {
+		color: #000000;
+		font-size: 1.5rem;
+	}
+	
+		.divlxikuan {
 			width: 100%;
 			height: auto;
-			background-image: url(../img/datuimg%201.jpg);
-			background-repeat: no-repeat;		/* 取消重复图片 */
-			background-size: 100%;		/* 铺平 */
+			margin: 0 auto;
+			
+			
+			/* 盒子阴影 */
+			
+		}
+		.ullxikuan {
+			display: table;
+			margin: 0 auto;
+			text-align: center;		
+			
+			
+		}
+		.lilxikuan {
+			list-style-type: none;	/* 不要黑点 */
+			
+			padding-right:20px;	/* 间隔 */
+			float: left;	/* 右排 */
+			
+			
+		}
+		.lilxikuan:hover {
+			
+			color: #D2691E;
+			
+		}
+		.lilxikuan img {
+			width: 2.1875rem;
+			
+			margin: 0.625rem auto;
+			padding-top: 0.0625rem;	/* 上 */
+			padding-bottom: 0.0625rem;	/* 下 */
+			border: 0.25rem solid #000000;	/* 描边框 */
+			border-radius: 0.625rem;	/* 四边圆角10 */
+			transition: all 0.5s;
+			
+		}
+		.lilxikuan img:hover {
+			color: #D2691E;
+			transform: scale(1.1);
+		}
+		.lilxikuan p {
+			text-align: center;
+			margin: 0 auto;
+			
+		}
+		.lilxikuan a {
+			color: #000000;
+			font-weight: bold;
+			
+			text-decoration: none;/* 不要超链接 */
+		}
+		.lilxikuan a:hover {
+			color: #D2691E;
+			
+			
+		}
+	
+	
+	
+	/* 当浏览器小于700时变竖排 */
+	@media (max-width:64rem) {
+		.main {
+			width: 95%;
+			margin: auto;
+			margin-top: 4.0625rem;
+			
+		}
+		.header {
+			
+		}
+		.header img {
+			width: 6.25rem;
+			float: left;
+		}
+		
+		.header h1 {
+		font-size: 20px;	
+		
+		margin-top: 1.5625rem;
+		
+		
+		}
+		
+		.navbar {
+			position: fixed;
+			width: 95%;
+			/* height: auto; */
+			 top: 0;
+			
 			
 		}
 		
-		.xinneirong img {
+		.navbar .nav ul > li > a {
+		width: 108%;
+		line-height: 45px;
+		margin-top: 10%;
+		}
+		.navbar .nav ul > li ol li{
+		margin-top: -10%;
+		line-height: auto;
+		    height: 66px;
+		}
+		.navbar .nav ul > li ol li a{
+		line-height: 30px;
+		margin-top: -10%;
+		}
+		
+		.lside,.content,.rside {
+			
 			width: 100%;
-			height: 600px;
-		}
-		.xinneirong h2 {
-			text-align: center;
-		}
-		.zhenli1 {
-		    color: #999;
-		    font-size: 30px;
-			text-align: center;
-		    font-weight: bold;
-		    font-family: "华文楷体";
+			margin: 0px;
 		}
 		
-		.zhenli2 {
-			    color: #000;
-				text-align: center;
-			    font-size: 36px;
-			    text-align: center;
-			    font-family: "华文楷体";
+		.rside {
+			display: none;
+			/* 不显示出来 */
 		}
 		
-		
-		/* 大表格内容 */
-			
-			.dabiaoge {
-				width: 100%;
-				height: auto;
-				background-image: url(../img/datuimg%201.jpg);
-				background-repeat: no-repeat;		/* 取消重复图片 */
-				background-size: 100%;		/* 铺平 */
-				
+		.lilxikuan {
+			padding-right:5px;	/* 间隔 */
 			}
-			.dabiaoge td {
-				width: 500px;
-				height: 300px;
+		.lilxikuan img {
+			width: 20px;
 			}
-			
-			
-			/* 小表1 */
-			.biao1 {
-				width: 100%;
-				height: 100%;
-				
-				perspective: 500px;
-			}
-			/* 小表1.1 */
-			.box {
-				
-				position: relative;		
-				width: 100%;
-				height: 200px;
-				margin: auto;
-				transition: all 2s;
-				transform-style: preserve-3d;
-				
-			}
-			.box img {
-				width: 100%;
-				height: 100%;
-			}
-			 .box:hover {
-				 transform: rotateY(60deg);
-			 }
-			.box div {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
-			.box div:last-child {
-				
-				transform: rotateX(60deg);
-			}
-			/* 小表1.1结束 */
-			
-			/* 小表1.2 */
-			
-			
-			.jingmian img {
-				width: 100%;
-				height: 100%;
-				
-			}
-			.jingmian:hover {
-				transform: rotateY(180deg);
-				transition: all 2s;
-			}
-			
-			/* 小表1.2结束 */
-			
-			/* 小表1.3 */
-			.zhuang img {
-				width: 100%;
-				height: 100%;
-			}
-			.zhuang:hover {
-				transform: rotate(360deg);		/* 旋转 */
-				transition: all 1s;		/* 过度效果 */
-				
-			}
-			/* 小表1.3结束 */
-			
-			/* 小表1.4 */
-			.v180v {
-				overflow: hidden;
-				border: 1px solid red;
-				width:100% ;
-				height:300px ;
-			}
-			.v180v::after {
-				content: '嗨,我是老六';
-				display: block;
-				width: 100%;
-				height: 100%;
-				background-color: pink;
-				transform: rotate(180deg);
-				transform-origin: left bottom ;
-				transition: all 0.2s;
-				
-			}
-			.v180v:hover::after {
-				transform: rotate(0deg);
-			}
-			/* 小表1.4结束 */
-			
-			/* 小表1.5 */
-			.donggang {
-				overflow: hidden;
-				
-			}
-			 .donggang img {
-				 width: 100%;
-				 height: 100%;
-				 transition: all 0.4s;
-				 
-			 }
-			.donggang img:hover  {
-				transform: scale(1.2);
-				
-			}
-			
-			/* 小表1.5结束 */
-			
-			/* 小表1结束 */
-			
-			/* 小表2 */
-			.xiaotangyuan ul li /* 导航条的li标签 */ {
-							float: left;/* 行元素 */
-							width: 100%;
-							height: 100%;
-							border: 1px solid pink;
-							margin: auto;
-							text-align: center;
-							padding-top: 100%;
-							line-height: 100%;
-							
-							border-radius: 50%;
-							transition: all 0.1s;		/* 过度时间 */
-							
-						}
-			.xiaotangyuan ul li p {
-				margin-top: -50%;
-				
-				
-			}
-			.xiaotangyuan ul li:hover {
-				transform: scale(1.2);		/* 鼠标移动放大 */
-				color: #D2691E;/* 字体颜色 */
-				background-color: #ced2c1;
-				
-				
-				
-			}
-			.xiaotangyuan ul li:hover::before  /* 前面加文字 */ {
-				/* content: '真的'; */
-			}
-			.xiaotangyuan li:hover::after {
-				content: '小琼';
-			}
-			
-		
-			/* 小表2.2 */
-			.xuanzhuandaohang {
-				width: 100%;
-				margin: auto;
-			}
-			.xuanzhuandaohang li {
-				float: left;/* 行元素 */
-				height: 100px;
-				width: 100%;
-				
-				
-			}
-			
-			.xuanzhuandaohang li img {
-				width: 100%;
-				height: 100%;
-			}
-			
-			.xuanzhuan {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				transform-style: preserve-3d;
-				transition:  all 0.4s;
-				
-			}
-			.xuanzhuan:hover {
-				transform: rotateX(90deg);
-			}
-			.xuanzyi,
-			.xuanzyiho {
-				position: absolute;
-				
-				width: 100%;
-				height: 100%;
-			}
-			.xuanzyi {
-				
-				transform: translateZ(50px);
-			}
-			.xuanzyiho {
-				/* background-color: #D2691E; */
-				transform: translateY(50px) rotateX(-90deg);
-			}
-			
-			/* 小表2.2结束 */
-		
-			
-			/* 小表2.3 */
-			
-			.xuanzhuan3d {
-				position: relative;
-				width:100%;
-				height: 90%;
-				
-				transform-style: preserve-3d;
-				animation: rotate 10s linear infinite;
-				background: url(../img/dsjwytup.jpg) no-repeat;
-				background-size: 100%;
-			
-			}
-			.xuanzhuan3d:hover {
-				animation-play-state: paused;
-			}
-			@keyframes rotate {
-				0% {
-					transform: rotateY(0);
-				}
-				100% {
-					transform: rotateY(360deg);
-				}
-			}
-			
-			
-			/* 小表2.3结束 */
-			
-			/* 小表2.4 */
-			
-			/* 小表2.4结束 */
-			
-			
-			/* 小表2.5 */
-			
-			/* 小表2.5结束 */
-			
-		
-		/* 小表2结束 */
-			
-		/* 小表3 */
-			/* 小表3.2 */
-			
-			/* 小表3.2结束 */
-			
-			/* 小表3.3 */
-			
-			/* 小表3.3结束 */
-			
-			/* 小表3.4 */
-			
-			/* 小表3.4结束 */
-			
-			
-			/* 小表3.5 */
-			
-			/* 小表3.5结束 */
-			
-		/* 小表3结束 */
-			
-		/* 小表4 */
-			
-			/* 小表4.2 */
-			
-			/* 小表4.2结束 */
-			
-			/* 小表4.3 */
-			
-			/* 小表4.3结束 */
-			
-			/* 小表4.4 */
-			
-			/* 小表4.4结束 */
-			
-			
-			/* 小表4.5 */
-			
-			/* 小表4.5结束 */
-			
-		/* 小表4结束 */
-			
-		/* 小表5 */
-			
-			/* 小表5.2 */
-			
-			/* 小表5.2结束 */
-			
-			/* 小表5.3 */
-			
-			/* 小表5.3结束 */
-			
-			/* 小表5.4 */
-			
-			/* 小表5.4结束 */
-			
-			
-			/* 小表5.5 */
-			
-			/* 小表5.5结束 */
-			
-		/* 小表5结束 */
-			
-			/* 大表格内容结束 */
-		
-		/* 新官网内容结束 */
 		
 		
+	}
+	
+	.weibawenzi p {
+		color: #000000;
+		font-size: 1rem;
 		
-		/* 版尾 */
-		
-		.weibawenzi {
-			text-align: center;
-		}
-		
-			.divlxikuan {
-				width: 100%;
-				height: auto;
-				margin: 0 auto;
-				
-				background-color: #fff;
-				/* 盒子阴影 */
-				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-			}
-			.ullxikuan {
-				display: table;
-				margin: 0 auto;
-				text-align: center;		
-				
-				
-			}
-			.lilxikuan {
-				list-style-type: none;	/* 不要黑点 */
-				
-				padding-right:20px;	/* 间隔 */
-				float: left;	/* 右排 */
-				
-				
-			}
-			.lilxikuan:hover {
-				
-				color: #D2691E;
-				
-			}
-			.lilxikuan img {
-				width: 30px;
-				
-				margin: 10px auto;
-				padding-top: 1px;	/* 上 */
-				padding-bottom: 1px;	/* 下 */
-				border: 4px solid #000000;	/* 描边框 */
-				border-radius: 10px;	/* 四边圆角10 */
-				transition: all 0.5s;
-				
-			}
-			.lilxikuan img:hover {
-				color: #D2691E;
-				transform: scale(1.1);
-			}
-			.lilxikuan p {
-				text-align: center;
-				margin: 0 auto;
-			}
-			.lilxikuan a {
-				color: #000000;
-				font-weight: bold;
-				
-				text-decoration: none;/* 不要超链接 */
-			}
-			.lilxikuan a:hover {
-				color: #D2691E;
-				
-				
-			}
-			/* 版尾结束 */
-			
-			/* 浮动小窗口 */
-			.go-top {
-				
-			    position: fixed;
-			    bottom: 200px;
-			    right: 20px;
-				width: 50px;
-				height: 50px;
-				
-				
-				
-				}
-				
-				
-			.go-top img {
-				width: 100%;
-				background-color: #fff;
-				/* 盒子阴影 */
-				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-				border-radius: 10px;/* 四边圆角10 */
-			}
+	}
 	
 	</style>
-</head>
-
 <body>
 	
 	<script type="text/javascript">document.body.onfocus = function() {
@@ -664,290 +411,160 @@
 	  document.body.onblur = function() {
 	    document.title = "DSJIE官网发呆中- ( ゜- ゜)つロ"
 	  };</script>
-	
-		<!-- 大盒子 -->
-		<div class="xindahezi">
-		
-		<!-- 欢迎导航 -->
-		<div class="huanying">
-		<p class="huanyingxiaozzi"><a href="#" target="_blank" title="点击跳转首页"><img src="img/dsjwytup.jpg"/ ></a>
-		DSJ网页 > 个人网站 > 娱乐
-		<a><img src="https://www.mfwztj.com/hit.php?id=zmukddc&nd=5&style=10" border="0" alt="网站计数器"></a></p>
-		
-		
-		
-		<h2 class="huanyingh2">欢迎光临：欢迎进入《新-DSJIE网站》</h2>
-		<hr />
-		</div>
-			
-			<!-- 欢迎导航结束 -->
-		
-		
-			
-		<!-- 二级导航 -->
-		<div class="navbar">
-		    <div class="nav">
-		        <ul>
-	              <li>
-		                <a href="#">首页</a>
-						<ol>
-						    <li><a href="https://www.gxgj.com/"><p>机电技师学院</p></a></li>
-						    <li><a href="dsjwywj/223/223.html">宿舍区域</a></li>
-							<li><a href="LGXTUKU/index.html" target="_blank" title="点击跳转李庚希专属网站" >爱豆李庚希</a></li>
-						    <li><a href="#">开发中...</a></li>
-						</ol>
-	              </li>
-	              <li>
-		                <a href="#">娱乐</a>
-		                <ol>
-		                    <li><a href="dsjwywj/nr-jieshao.html">介绍</a></li>
-		                    <li><a href="%E8%A1%A8%E7%99%BD%E7%9B%B8%E5%86%8C/%E8%A1%A8%E7%99%BD%E7%9B%B8%E5%86%8C.html">电子相册</a></li>
-		                    <li><a href="#">图片区</a></li>
-		                    <li><a href="dsjwywj/nr-spinqu.html">视频区</a></li>
-		                    <li><a href="dsjwywj/404.html">正在开发...</a></li>
-		                </ol>
-	              </li>
-	              <li>
-		                <a href="#">可能感兴趣</a>
-		                <ol>
-		                    <li><a href="Adobe/Adobe全家桶下载.html">Adobe全家桶</a></li>
-		                    <li><a href="MuBan/love/index.html">有喜欢的人吗？</a></li>
-		                    <li><a href="pubuliu/index.html">好看小姐姐图片</a></li>
-		                    <li><a href="luosifen/lsf.html">螺蛳粉</a></li>
-		                    <li><a href="webjiaoxue/dsjie.jiaoxue.html">B站教学</a></li>
-		                </ol>
-	              </li>
-				  
 
-				  
-				  <li>
-					    <a href="#">友情赞助</a>
-					    <ol>
-					        <li><a href="#">敬请期待...</a></li>
-					        
-					    </ol>
-				  </li>
-				  <li>
-					    <a href="#">联系我们</a>
-					    <ol>
-					        <li><a href="#">QQ联系</a></li>
-					        <li><a href="#">微信联系</a></li>
-					        <li><a href="#">手机号码</a></li>
-					        <li><a href="dengluxitong/用户管理系统.asp">更多联系</a></li>
-					        
-					    </ol>
-				  </li>
-				  
-				  
-		            
-		            <!-- 这个元素定义滑动的线条 -->
-	              <li class="underline"></li>
-		        </ul>
-		    </div>
-		</div>
-		<!-- 二级导航结束 -->
+	<div class="main">
+	<div class="header">
+	    <img src="shujuku/img/dsjwytuptoming.png" />
+		<h1>欢迎光临：欢迎进入<br>《DSJIE网站》</h1>
 		
-		<!-- 新官网内容 -->
-		<div class="xinneirong">
-			<h2> <a href="#" target="_blank" title="点击跳转">点击了解公告</a> </h2>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-		  <p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			
-			<p class="zhenli1">    当自己身边的朋友脱单时，你拼命地诅咒他们迟早要分手 <br /> 开始等到他们分手后你又开始劝和他们要在一起。</p>
-			<p >&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p class="zhenli2">你看吧，人呢！就是羡慕 。</p>
-			
-		
-			
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-		 	
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			
-		
-			<img src="img/dsjwytup.jpg" />
-            
-            
-            <table class="dabiaoge" border="1" cellpadding="0" cellspacing="0"  >
-            	<tr class="biao1">
-            		<td>
-            			小表1.1<div class="box">
-            		<div> <img src="img/bilibili_3.png" /></div>
-            		<div> <img src="img/bilibili_3.png" /></div>
-            		</div> 
-            		45°
-            		</td>
-            		<td>小表1.2
-            		<div class="jingmian"><img src="img/D.jpg" /></div>
-            		180°
-            		</td>
-            		<td>小表1.3
-            		<div class="zhuang "><img  src="img/ligengxi.jpg"></div>
-            		旋转360°
-            		</td>
-            		<td>小表1.4
-            		<div class="v180v"></div>
-            		老六出现
-            		</td>
-            		<td>小表1.5
-            		<div class="donggang">
-            			<a href="#" ><img   src="img/ligengxi.jpg" /></a>
-            		</div>
-            		放大
-            		</td>
-            	</tr>
-            	<tr class="biao2">
-            		<td>小表2
-            		<div class="xiaotangyuan">
-            		<ul>
-            			<li><a href="#"> <p>DSJIE爱</p> </a></li>
-            			
-            		</ul>
-            		</div>
-            		放大
-            		</td>
-            		<td>小表2.2
-            		<ul class="xuanzhuandaohang">
-            			
-            			<li><div class="xuanzhuan">
-            			<div class="xuanzyi"> <img src="img/box_114292636267580_pic.jpeg" /> </div>
-            			<div class="xuanzyiho"> <img src="img/DSJlogotom.png" /> </div>
-            		</div></li>
-            		</ul>
-            		
-            		导航旋转盒子
-            		</td>
-            		<td>小表2.3
-            		
-            			 <section class="xuanzhuan3d">
-            		</section>
-            		 <a href="教室-DSJIE-测试/3d.html">3D旋转图</a>
-            		</td>
-            		<td>小表2.4</td>
-            		<td>小表2.5</td>
-            	</tr>
-            	<!-- <tr class="biao3">
-            		<td>小表3</td>
-            		<td>小表3.2</td>
-            		<td>小表3.3</td>
-            		<td>小表3.4</td>
-            		<td>小表3.5</td>
-            	</tr> -->
-            	<!-- <tr class="biao4">
-            		<td>小表4</td>
-            		<td>小表4.2</td>
-            		<td>小表4.3</td>
-            		<td>小表4.4</td>
-            		<td>小表4.5</td>
-            	</tr> -->
-            </table>
-            
-			
-		</div>
-		<hr />
-			
-		<!-- 官网内容结束 -->
-		
-		
-		<!-- 版尾 -->
-		
-		<div class="divlxikuan">
-			<div class="weibawenzi">
-			<a href="https://active.clewm.net/ExrLfw?qrurl=http://c3.clewm.net/ExrLfw"><h2>本网站归属权为@DSJIE</h2>
-			<p><b>本网站作者联系方式如下：</b></p></a>
-			</div>
-						<ul class="ullxikuan" >
-							<!-- 公众号 --><li class="lilxikuan"><a href="https://active.clewm.net/ExrLfw?qrurl=http://c3.clewm.net/ExrLfw&gtype=1&key=6ef9516cc26dd921053026e6f3298a96cad9f61818" target="_blank" title="点击跳转公众号:DSJIE科技">
-							<img src="img/gongzhonghao.png"/ ><p>公众号
-		</p></a></li>
-							<!-- 微信 --><li class="lilxikuan"><a href="https://work.weixin.qq.com/kfid/kfc9cafbcb9fc84431f " target="_blank" title="点击跳转微信：DSJIE-LOVE-LGX">
-							<img src="img/weixin.png"/ ><p>微信</p></a></li>
-							<!-- QQ --><li class="lilxikuan"><a href="https://qm.qq.com/cgi-bin/qm/qr?k=HyOn0P6p7A-1bkSarueLnx0h-A6dtc1_&noverify=0 " target="_blank" title="点击跳转QQ：2748859465">
-							<img src="img/qqa.png"/ ><p>QQ
-		</p></a></li>
-							<!-- 微博 --><li class="lilxikuan"><a href="https://weibo.com/u/6242132952 " target="_blank" title="点击跳转微博：DSJIE-庚希">
-							<img src="img/xinlangweibo.png"/ ><p>微博
-		</p></a></li>
-							<!-- 快手 --><li class="lilxikuan"><a href="https://npsbeijing.s.kuaishouapp.com/s/F59ZIQnl " target="_blank" title="点击跳转快手：DSJIE-庚希">
-							<img src="img/kuaishoua.png"/ ><p>快手
-		</p></a></li>
-							<!-- 抖音 --><li class="lilxikuan"><a href="https://www.douyin.com/user/MS4wLjABAAAAlHvb2ybBlfNdYvqrOR8LhOB8gg4O-c8pYKQeAe2EfJ0" target="_blank" title="点击跳转抖音：DSJIE-庚希">
-							<img src="img/douyina.png"/ ><p>抖音
-		</p></a></li>
-		
-		
-							<!-- QQ邮箱 --><li class="lilxikuan"><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=RHZzcHx8cX1wcnEENTVqJysp " target="_blank" title="点击跳转QQ邮箱">
-							<img src="img/youxiang.png"/ ><p>Q邮
-							
-		</p></a></li>
-		
-							<!-- 网易邮箱 --><li class="lilxikuan"><a href="mailto:dsj2748859465@163.com " target="_blank" title="点击跳转网易邮箱">
-							<img src="img/youxiang.png"/ ><p>网邮
-							
-		</p></a></li>
-							<!-- 更多联系方式 --><li class="lilxikuan"><a href="https://active.clewm.net/ExrLfw?qrurl=http://c3.clewm.net/ExrLfw" target="_blank" title="点击跳转更多联系方式">
-												<img src="img/gengduo.png"/ ><p>更多
-							</p></a></li>
-						</ul>
-						
-		  </div>
-		<!-- 版尾结束 -->
-		
-		<!-- 浮动小窗口 -->
-		<div class="go-top">
-			
-			<!-- 反馈 -->
-			<a href="#" target="_blank" title="点击跳转反馈页面"> <img src="img/fankui.png" /></a>
-			
-			<!-- 信息 -->
-			<a href="https://work.weixin.qq.com/kfid/kfc9cafbcb9fc84431f" target="_blank" title="点击跳转微信客服"> <img src="img/xinxi.png" /></a>
-			
-		
-            
-            <!-- 置顶 -->
-			<a href="#"target="_blank" title="点击置顶首页"> <img src="img/zhiding.png" /> </a>
-			
-			
-			
-		</div>
-			<!-- 浮动小窗口结束 -->
 	
+	</div>
+	<div class="navbar">
+	    <div class="nav">
+	        <ul>
+	          <li>
+	                <a href="#">首页</a>
+					<ol>
+					    <li><a href="https://www.gxgj.com/"><p>机电技师学院</p></a></li>
+					    <li><a href="dsjwywj/223/223.html">宿舍区域</a></li>
+						<li><a href="LGXTUKU/index.html" target="_blank" title="点击跳转李庚希专属网站" >爱豆李庚希</a></li>
+					    <li><a href="#">开发中...</a></li>
+					</ol>
+	          </li>
+	          <li>
+	                <a href="#">娱乐</a>
+	                <ol>
+	                    <li><a href="dsjwywj/nr-jieshao.html">介绍</a></li>
+	                    <li><a href="%E8%A1%A8%E7%99%BD%E7%9B%B8%E5%86%8C/%E8%A1%A8%E7%99%BD%E7%9B%B8%E5%86%8C.html">电子相册</a></li>
+	                    <li><a href="#">图片区</a></li>
+	                    <li><a href="dsjwywj/nr-spinqu.html">视频区</a></li>
+	                    <li><a href="dsjwywj/404.html">正在开发...</a></li>
+	                </ol>
+	          </li>
+	          <li>
+	                <a href="#">可能感兴趣</a>
+	                <ol>
+	                    <li><a href="Adobe/Adobe全家桶下载.html">Adobe全家桶</a></li>
+	                    <li><a href="MuBan/love/index.html">有喜欢的人吗？</a></li>
+	                    <li><a href="pubuliu/index.html">好看小姐姐图片</a></li>
+	                    <li><a href="luosifen/lsf.html">螺蛳粉</a></li>
+	                    <li><a href="webjiaoxue/dsjie.jiaoxue.html">B站教学</a></li>
+	                </ol>
+	          </li>
+			  
+	
+			  
+			  <li>
+				    <a href="#">友情赞助</a>
+				    <ol>
+				        <li><a href="#">敬请期待...</a></li>
+				        
+				    </ol>
+			  </li>
+			  <li>
+				    <a href="#">联系我们</a>
+				    <ol>
+				        <li><a href="#">QQ联系</a></li>
+				        <li><a href="#">微信联系</a></li>
+				        <li><a href="#">手机号码</a></li>
+				        <li><a href="dengluxitong/用户管理系统.asp">更多联系</a></li>
+				        
+				    </ol>
+			  </li>
+			  
+			  
+	            
+	            <!-- 这个元素定义滑动的线条 -->
+	          <li class="underline"></li>
+	        </ul>
+	    </div>
+	</div>
+	<div class="container">
+	
+	<div class="lside">
+		
+		<h2>广告栏</h2>
+		<p class="wenxintishi">
+			
+			暂时没有投放广告！！！
+		</p>
+		
+	</div>
+	
+	
+	
+	<div class="content">
+		
+		<h2>内容区</h2>
+		<p>
+			还没有开发，联系方式在下方！！！
+			
+			
+		</p>
+		
+	</div>
+	
+	<div class="rside">
+		
+		<h2>公告栏 
+		<mark>
+		<i>注意：本公告栏仅电脑端可见</i> </mark>
+		</h2>
+		<p>
+			
+		</p>
+		
+	</div>
+	
+	
+	</div>
+	<div class="footer">
+		
+	<div class="divlxikuan">
+		<div class="weibawenzi">
+		<a href="https://active.clewm.net/ExrLfw?qrurl=http://c3.clewm.net/ExrLfw">
+		<p><b>本网站归属权为@DSJIE,作者联系方式如下：</b></p></a>
 		</div>
+					<ul class="ullxikuan" >
+						<!-- 公众号 --><li class="lilxikuan"><a href="https://active.clewm.net/ExrLfw?qrurl=http://c3.clewm.net/ExrLfw&gtype=1&key=6ef9516cc26dd921053026e6f3298a96cad9f61818" target="_blank" title="点击跳转公众号:DSJIE科技">
+						<img src="img/gongzhonghao.png"/ ><p>公众号
+	</p></a></li>
+						<!-- 微信 --><li class="lilxikuan"><a href="https://work.weixin.qq.com/kfid/kfc9cafbcb9fc84431f " target="_blank" title="点击跳转微信：DSJIE-LOVE-LGX">
+						<img src="img/weixin.png"/ ><p>微信</p></a></li>
+						<!-- QQ --><li class="lilxikuan"><a href="https://qm.qq.com/cgi-bin/qm/qr?k=HyOn0P6p7A-1bkSarueLnx0h-A6dtc1_&noverify=0 " target="_blank" title="点击跳转QQ：2748859465">
+						<img src="img/qqa.png"/ ><p>QQ
+	</p></a></li>
+						<!-- 微博 --><li class="lilxikuan"><a href="https://weibo.com/u/6242132952 " target="_blank" title="点击跳转微博：DSJIE-庚希">
+						<img src="img/xinlangweibo.png"/ ><p>微博
+	</p></a></li>
+						<!-- 快手 --><li class="lilxikuan"><a href="https://npsbeijing.s.kuaishouapp.com/s/F59ZIQnl " target="_blank" title="点击跳转快手：DSJIE-庚希">
+						<img src="img/kuaishoua.png"/ ><p>快手
+	</p></a></li>
+						<!-- 抖音 --><li class="lilxikuan"><a href="https://www.douyin.com/user/MS4wLjABAAAAlHvb2ybBlfNdYvqrOR8LhOB8gg4O-c8pYKQeAe2EfJ0" target="_blank" title="点击跳转抖音：DSJIE-庚希">
+						<img src="img/douyina.png"/ ><p>抖音
+	</p></a></li>
+	
+	
+						<!-- QQ邮箱 --><li class="lilxikuan"><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=RHZzcHx8cX1wcnEENTVqJysp " target="_blank" title="点击跳转QQ邮箱">
+						<img src="img/youxiang.png"/ ><p>Q邮
+						
+	</p></a></li>
+	
+						<!-- 网易邮箱 --><li class="lilxikuan"><a href="mailto:dsj2748859465@163.com " target="_blank" title="点击跳转网易邮箱">
+						<img src="img/youxiang.png"/ ><p>网邮
+						
+	</p></a></li>
+						<!-- 更多联系方式 --><li class="lilxikuan"><a href="https://active.clewm.net/ExrLfw?qrurl=http://c3.clewm.net/ExrLfw" target="_blank" title="点击跳转更多联系方式">
+											<img src="img/gengduo.png"/ ><p>更多
+						</p></a></li>
+					</ul>
+					
+	  </div>
+	</div>
+	
+	</div>
 		
-		
-		
-		
+	</body>
 		
 </body>
 </html>
