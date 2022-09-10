@@ -1,0 +1,818 @@
+
+
+	* {
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		list-style: none;
+		
+	}
+	body {
+		background-image: url(../img/bg9.gif);
+		
+	}
+	.main {
+		width: 80%;
+		margin: auto;
+		margin-top: 0.625rem;
+	}
+	.header,.nav,.container,.footer {
+		/* 头部 导航 主体 底部 四个盒子都要浮动 */
+		
+		/* float: left; */
+		
+		/* 铺满浏览器*/
+		width: 100%;
+		/* 对其 */
+		box-sizing: border-box;
+	}
+	.header {
+		/* background-color: #fff; */
+		
+		box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+		
+		padding: 3.25rem;
+		text-align: center;
+	}
+	.header img {
+		width: 9.375rem;
+		float: left;
+		
+	}
+	.header h1 {
+		margin-top: 2.5625rem;
+		
+		
+	}
+	.container {
+		margin-top: 10px;
+	}
+	.navbar{
+	    width: 100%;
+	    height: 3.75rem;
+	    background-color: #fff;
+		background-image: url(../img/bg9.gif);
+		/* 字体加粗 */
+		font-weight: bold;
+	    /* 盒子阴影 */
+	    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+	}
+	
+	div  {
+		border-radius: 0.625rem;/* 四边圆角10 */
+		/* background-image: url(../img/bg9.gif); */
+		/* text-indent: 1.5em;/* 首行空字符 */ 
+	}
+	ol {
+		border-radius: 0.625rem;/* 四边圆角10 */
+		/* text-indent: 1.5em;/* 首行空字符 */ 
+	}
+	li{
+		/* 不要黑点 */
+	    list-style: none;
+		/* border-radius: 10px;/* 四边圆角10 */ 
+	}
+	a {
+		text-decoration: none; /* 不要超链接 */
+		color: #000000;
+	}
+	
+	.navbar{
+	    width: 100%;
+	    height: 3.75rem;
+	    background-color: #fff;
+		
+		/* 字体加粗 */
+		font-weight: bold;
+	    /* 盒子阴影 */
+	    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+	}
+	
+	.navbar .nav{
+	    width: 100%;
+	    height: 100%;
+	    /* 让元素自动水平居中 */
+	    margin: 0 auto;
+	}
+	
+	.navbar .nav ul{
+	    /* 相对定位 */
+	    position: relative;
+	    /* 弹性布局 */
+	    display: flex;
+	    /* 让子元素平均分配宽度 */
+	    justify-content: space-around;
+	    width: 100%;
+	    height: 111%;
+	}
+	.navbar .nav ul > li{
+	    width: 100%;
+	    height: 100%;
+	}
+	
+	.navbar .nav ul > li > a{
+		/* 因为a元素是行内元素 必须将其转为行内块或者块级才能设置宽度和高度 */
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    line-height: 60px;
+	    text-align: center;
+	}
+	
+	.navbar .nav ul > li ol{
+	    width: 100%;
+	    background-color: #fff;
+		background-image: url(../img/bg9.gif);
+	    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+		/* 让盒子先沿着y轴缩放到0 也就是隐藏了 */
+	    transform: scaleY(0);
+		/* 我们需要将盒子从上面滑动下来 设置一下缩放的中心点即可 设置到最上面的中间位置 */
+	    transform-origin: 50% 0;
+	    /* 设置过渡 */
+	    transition: all 0.2s;
+	}
+	
+	.navbar .nav ul > li ol li{
+		width: 100%;
+	    height: 60px;
+		/* 间隙-1 颜色 */
+	    border-bottom: 0px solid rgb(245, 245, 245);
+	}
+	
+	.navbar .nav ul > li ol li a{
+	    display: block;
+	    width: auto;
+	    height: auto;
+	    line-height: 60px;
+	    text-align: center;
+	}
+	
+	.navbar .nav ul > li ol li:hover{
+	    /* 添加灰色 */
+		background-color: rgba(0, 0, 0, 0.03);
+	}
+	
+	.navbar .nav ul > li:hover ol{
+	    transform: scaleY(1);
+	}
+	
+	.navbar .nav ul .underline{
+	    /* 绝对定位 */
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    width: 20%;
+	    height: 6px;
+	    /* 设置一下盒子的左上角和右上角的圆角 */
+	    border-top-left-radius: 6px;
+	    border-top-right-radius: 6px;
+	    background-color: #1169d4;
+	    /* 加上过渡 */
+	    transition: all 0.5s;
+		/* 现在有个小问题 我们一起看看 ne
+	  /* 就是这个问题 这个线条有点影响鼠标移入li这个效果 */
+		/* 这个属性就可以解决这个问题 就貌似这个元素你能看见 但是鼠标是点击不到了 现在鼠标放到线条也没事了 */
+	    pointer-events: none;
+	}
+	
+	.navbar .nav ul .underline::before{
+	    content: "";
+		/* 利用::before伪元素设置三角 */
+	    position: absolute;
+	    top: -10px;
+		/* calc方法自动计算数值 让盒子居中 */
+	    left: calc(50% - 9px);
+	    width: 18px;
+	    height: 10px;
+		/* inherit可以继承父元素的属性值 */
+	    background-color: inherit;
+	/* 各位小伙伴可能对着属性比较陌生 我简单说一下这句话如何生成了三角形 这个属性可以绘制图案 polygon这个属性只需要提供最少三个点
+	     就可以将三个点连接到一起 然后绘制一个图案  两个点的坐标位置(x,y) 0 100% 这个点就是说在x轴上为0px 在y轴是100% 
+	     就是盒子的高度 x轴的方向是向右 y轴的方向是向下 那么我们设置了三个点 然后将三个点连起来刚好绘制出一个三角形 不明白的小伙伴可以在纸上画一下 画出来就理解了 */
+	    clip-path: polygon(0 100%,50% 0,100% 100%);
+	}
+	
+	.navbar .nav ul > li:nth-child(2):hover ~ .underline{
+	    left: 20%;
+	    background-color: #D2691E;
+	}
+	
+	.navbar .nav ul > li:nth-child(3):hover ~ .underline{
+	    left: 40%;
+	    background-color: #1169d4;
+	}
+	
+	.navbar .nav ul > li:nth-child(4):hover ~ .underline{
+	    left: 60%;
+	    background-color: #D2691E;
+	}
+	
+	.navbar .nav ul > li:nth-child(5):hover ~ .underline{
+	    left: 80%;
+	    background-color: #1169d4;
+	}
+	
+	/* 左边 */
+	.lside {
+		width: 100%;
+		height: auto;
+		background-color: #d9edf7;
+		/* float: left; */
+		padding-top: 1px;
+		/* 上 */
+		padding-bottom: 1px;	
+		/* 下 */
+		/*border: 4px solid #D2691E;	*/
+		/* 描边框 */
+		
+	}
+	.lside mark {
+		font-size: 0.625rem;
+	}
+		
+	}
+	/* 左右两边固定宽度200 */
+	.lside h2 {
+	text-align: center;
+	}
+	.wenxintishi {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	/* 中间 */
+	.content {
+		width: 100%;
+		padding-top: 1px;
+		/* 上 */
+		padding-bottom: 1px;	
+		/* 下 */
+		/*border: 4px solid #D2691E;	*/
+		/* 描边框 */
+	}
+	.content h2 {
+		text-align: center;
+		
+		
+	}
+	.neirr {
+		width: 100%;
+		height: auto;
+	}
+	
+	.xinneirong {
+			width: 100%;
+			height: auto;
+			background-image: url(../img/datuimg%201.jpg);
+			/*/*background-repeat: no-repeat;*/*/		/* 取消重复图片 */
+			background-size: 100%;		/* 铺平 */
+			
+		}
+		
+		
+		
+		.zhenli1 {
+		    color: #999;
+		    font-size: 30px;
+			text-align: center;
+		    font-weight: bold;
+		    font-family: "华文楷体";
+		}
+		
+		.zhenli2 {
+			    color: #000;
+				text-align: center;
+			    font-size: 36px;
+			    text-align: center;
+			    font-family: "华文楷体";
+		}
+	
+	
+	/* 大表格内容 */
+			
+			.dabiaoge {
+				
+				width: 100%;
+				height: auto;
+				
+			}
+			.dabiaoge td {
+				width: 500px;
+				height: 300px;
+			}
+			
+			
+			/* 小表1 */
+			.biao1 {
+				width: 100%;
+				height: 100%;
+				
+				perspective: 500px;
+			}
+			/* 小表1.1 */
+			.box {
+				
+				position: relative;		
+				width: 100%;
+				height: 200px;
+				margin: auto;
+				transition: all 2s;
+				transform-style: preserve-3d;
+				
+			}
+			.box img {
+				width: 100%;
+				height: 100%;
+			}
+			 .box:hover {
+				 transform: rotateY(60deg);
+			 }
+			.box div {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			.box div:last-child {
+				
+				transform: rotateX(60deg);
+			}
+			/* 小表1.1结束 */
+			
+			/* 小表1.2 */
+			
+			
+			.jingmian img {
+				width: 100%;
+				height: 100%;
+				
+			}
+			.jingmian:hover {
+				transform: rotateY(180deg);
+				transition: all 2s;
+			}
+			
+			/* 小表1.2结束 */
+			
+			/* 小表1.3 */
+			.zhuang img {
+				width: 100%;
+				height: 100%;
+			}
+			.zhuang:hover {
+				transform: rotate(360deg);		/* 旋转 */
+				transition: all 1s;		/* 过度效果 */
+				
+			}
+			/* 小表1.3结束 */
+			
+			/* 小表1.4 */
+			.v180v {
+				overflow: hidden;
+				border: 1px solid red;
+				width:100% ;
+				height:300px ;
+			}
+			.v180v::after {
+				content: '嗨,我是老六';
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: pink;
+				transform: rotate(180deg);
+				transform-origin: left bottom ;
+				transition: all 0.2s;
+				
+			}
+			.v180v:hover::after {
+				transform: rotate(0deg);
+			}
+			/* 小表1.4结束 */
+			
+			/* 小表1.5 */
+			.donggang {
+				overflow: hidden;
+				
+			}
+			 .donggang img {
+				 width: 100%;
+				 height: 100%;
+				 transition: all 0.4s;
+				 
+			 }
+			.donggang img:hover  {
+				transform: scale(1.2);
+				
+			}
+			
+			/* 小表1.5结束 */
+			
+			/* 小表1结束 */
+			
+			/* 小表2 */
+			.xiaotangyuan ul li /* 导航条的li标签 */ {
+							float: left;/* 行元素 */
+							width: 100%;
+							height: 100%;
+							border: 1px solid pink;
+							margin: auto;
+							text-align: center;
+							padding-top: 100%;
+							line-height: 100%;
+							
+							border-radius: 50%;
+							transition: all 0.1s;		/* 过度时间 */
+							
+						}
+			.xiaotangyuan ul li p {
+				margin-top: -50%;
+				
+				
+			}
+			.xiaotangyuan ul li:hover {
+				transform: scale(1.2);		/* 鼠标移动放大 */
+				color: #D2691E;/* 字体颜色 */
+				background-color: #ced2c1;
+				
+				
+				
+			}
+			.xiaotangyuan ul li:hover::before  /* 前面加文字 */ {
+				/* content: '真的'; */
+			}
+			.xiaotangyuan li:hover::after {
+				content: '小琼';
+			}
+			
+		
+			/* 小表2.2 */
+			.xuanzhuandaohang {
+				width: 100%;
+				margin: auto;
+			}
+			.xuanzhuandaohang li {
+				float: left;/* 行元素 */
+				height: 100px;
+				width: 100%;
+				
+				
+			}
+			
+			.xuanzhuandaohang li img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.xuanzhuan {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				transform-style: preserve-3d;
+				transition:  all 0.4s;
+				
+			}
+			.xuanzhuan:hover {
+				transform: rotateX(90deg);
+			}
+			.xuanzyi,
+			.xuanzyiho {
+				position: absolute;
+				
+				width: 100%;
+				height: 100%;
+			}
+			.xuanzyi {
+				
+				transform: translateZ(50px);
+			}
+			.xuanzyiho {
+				/* background-color: #D2691E; */
+				transform: translateY(50px) rotateX(-90deg);
+			}
+			
+			/* 小表2.2结束 */
+		
+			
+			/* 小表2.3 */
+			
+			.xuanzhuan3d {
+				position: relative;
+				width:100%;
+				height: 90%;
+				
+				transform-style: preserve-3d;
+				animation: rotate 10s linear infinite;
+				background: url(../img/dsjwytup.jpg) no-repeat;
+				background-size: 100%;
+			
+			}
+			.xuanzhuan3d:hover {
+				animation-play-state: paused;
+			}
+			@keyframes rotate {
+				0% {
+					transform: rotateY(0);
+				}
+				100% {
+					transform: rotateY(360deg);
+				}
+			}
+			
+			
+			/* 小表2.3结束 */
+			
+			/* 小表2.4 */
+			
+			/* 小表2.4结束 */
+			
+			
+			/* 小表2.5 */
+			
+			/* 小表2.5结束 */
+			
+		
+		/* 小表2结束 */
+			
+		/* 小表3 */
+			/* 小表3.2 */
+			
+			/* 小表3.2结束 */
+			
+			/* 小表3.3 */
+			
+			/* 小表3.3结束 */
+			
+			/* 小表3.4 */
+			
+			/* 小表3.4结束 */
+			
+			
+			/* 小表3.5 */
+			
+			/* 小表3.5结束 */
+			
+		/* 小表3结束 */
+			
+		/* 小表4 */
+			
+			/* 小表4.2 */
+			
+			/* 小表4.2结束 */
+			
+			/* 小表4.3 */
+			
+			/* 小表4.3结束 */
+			
+			/* 小表4.4 */
+			
+			/* 小表4.4结束 */
+			
+			
+			/* 小表4.5 */
+			
+			/* 小表4.5结束 */
+			
+		/* 小表4结束 */
+			
+		/* 小表5 */
+			
+			/* 小表5.2 */
+			
+			/* 小表5.2结束 */
+			
+			/* 小表5.3 */
+			
+			/* 小表5.3结束 */
+			
+			/* 小表5.4 */
+			
+			/* 小表5.4结束 */
+			
+			
+			/* 小表5.5 */
+			
+			/* 小表5.5结束 */
+			
+		/* 小表5结束 */
+			
+			/* 大表格内容结束 */
+	
+	
+	.shell{
+	    
+	    column-count: 6;<-*列数*->
+	    column-gap: 0.9375rem;<-*间隔*->
+	}
+	.shellimg{
+	    margin-bottom: 0.9375rem;
+	}
+	.shellimg img {
+	    width: 100%;
+	}
+	
+	/* 右边 */
+	
+	.rside {
+		width: 300px;
+		float: right;
+	}
+	.rside h2 {
+		/* text-align: center; */
+	}
+	
+	.footer {
+		padding: 0.625rem;
+		/* background: #fff; */
+		text-align: center;
+		box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+	}
+	
+	
+	.weibawenzi {
+		text-align: center;
+	}
+	.weibawenzi p {
+		color: #000000;
+		font-size: 1.5rem;
+	}
+	
+		.divlxikuan {
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			
+			
+			/* 盒子阴影 */
+			
+		}
+		.ullxikuan {
+			display: table;
+			margin: 0 auto;
+			text-align: center;		
+			
+			
+		}
+		.lilxikuan {
+			list-style-type: none;	/* 不要黑点 */
+			
+			padding-right:20px;	/* 间隔 */
+			float: left;	/* 右排 */
+			
+			
+		}
+		.lilxikuan:hover {
+			
+			color: #D2691E;
+			
+		}
+		.lilxikuan img {
+			width: 2.1875rem;
+			
+			margin: 0.625rem auto;
+			padding-top: 0.0625rem;	/* 上 */
+			padding-bottom: 0.0625rem;	/* 下 */
+			border: 0.25rem solid #000000;	/* 描边框 */
+			border-radius: 0.625rem;	/* 四边圆角10 */
+			transition: all 0.5s;
+			
+		}
+		.lilxikuan img:hover {
+			color: #D2691E;
+			transform: scale(1.1);
+		}
+		.lilxikuan p {
+			text-align: center;
+			margin: 0 auto;
+			
+		}
+		.lilxikuan a {
+			color: #000000;
+			font-weight: bold;
+			
+			text-decoration: none;/* 不要超链接 */
+		}
+		.lilxikuan a:hover {
+			color: #D2691E;
+			
+			
+		}
+	
+	/* 浮动小窗口 */
+			.go-top {
+				
+			    position: fixed;
+			    bottom: 200px;
+			    right: 80px;
+				width: 50px;
+				height: 50px;
+				
+				
+				
+				}
+				
+				
+			.go-top img {
+				width: 100%;
+				background-color: #fff;
+				/* 盒子阴影 */
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+				border-radius: 10px;/* 四边圆角10 */
+			}
+	
+	/* 当浏览器小于700时变竖排 */
+	@media screen and (max-width:64rem) {
+		.main {
+			width: 95%;
+			margin: auto;
+			margin-top: 4.0625rem;
+			
+		}
+		.header {
+			
+		}
+		.header img {
+			width: 6.25rem;
+			float: left;
+		}
+		
+		.header h1 {
+		font-size: 20px;	
+		
+		margin-top: 1.5625rem;
+		
+		
+		}
+		
+		.navbar {
+			position: fixed;
+			margin: -0.0625rem;
+			width: 95%;
+			
+			 top: 0;
+			
+			
+		}
+		
+		
+		.navbar .nav ul > li > a {
+		width: 108%;
+		line-height: 45px;
+		margin-top: 10%;
+		}
+		.navbar .nav ul > li ol li{
+		margin-top: -10%;
+		line-height: auto;
+		    height: 66px;
+		}
+		.navbar .nav ul > li ol li a{
+		line-height: 30px;
+		margin-top: -10%;
+		}
+		
+		.lside,.content,.rside {
+			
+			width: 100%;
+			
+			margin: 0px;
+		}
+		.content {
+			width: 100%;
+			
+		}
+		
+		.dabiaoge {
+			display: none;
+			}
+		
+		
+		.shell{
+		    column-count: 4 ;
+		}
+		.guanggao,.rside {
+			display: none;
+			/* 不显示出来 */
+		}
+		
+		.lilxikuan {
+			padding-right:5px;	/* 间隔 */
+			}
+		.lilxikuan img {
+			width: 20px;
+			}
+		
+		
+	}
+	
+	.weibawenzi p {
+		color: #000000;
+		font-size: 1rem;
+		
+	}
+	.go-top {
+				
+			    position: fixed;
+			    bottom: 100px;
+			    right: 10px;
+				width: 40px;
+				height: 40px;
+				}
