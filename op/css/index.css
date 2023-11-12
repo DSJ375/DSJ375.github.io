@@ -63,7 +63,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	
-	
+	animation: yuanshen ease var(--chixushijian);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 @keyframes yuanshen { 
