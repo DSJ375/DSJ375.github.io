@@ -1,0 +1,92 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+:root {
+	/* 网页宽度 */
+	--kuan:100%;
+	/* 网页视口高度 */
+	--gaoa:98vh;
+	/* 原神图片持续时间 */
+	--chixushijian:5s;
+	/* 位置 */
+	--top:0px;
+	--left:0px;
+	--shikogao:100vh;
+	--shikokuan:100vh;
+}
+body {
+	height: var(--gaoa) ;
+	width:var(--kuan);
+}
+
+.zhuti {
+	position: relative;  
+	 width:var(--kuan);
+	height: var(--gaoa) ;
+	animation: zhuti ease var(--chixushijian);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.zhuti video {
+	width: 100%;
+	position: relative;  
+	overflow: hidden;  
+	position: absolute;  
+	top: 0;  
+	left: 0;  
+	height: 100%;  
+}
+.zhuti img {
+	/* width: calc(var(--kuan) /2); */
+}
+@keyframes zhuti { 
+    0% { 
+        opacity: 0; 
+    } 
+	99%{
+		opacity:0;
+	}
+    100% { 
+        opacity: 1; 
+     } 
+}
+.yuanshen {
+	height: var(--gaoa) ;
+	 position: absolute;  
+	top: var(--top) ; 
+	 left:var(--left) ;
+	 width: var(--kuan);
+	  
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	animation: yuanshen ease var(--chixushijian);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes yuanshen { 
+    0% { 
+        opacity: 0; 
+    } 
+	99%{
+		opacity:1;
+	}
+    100% { 
+        opacity: 0; 
+     } 
+}
+.yuanshen img {
+	
+	/* width: calc(var(--kuan) *0.4); */
+}
+
+
+
+
+
+
+
+
