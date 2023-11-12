@@ -57,7 +57,7 @@ body {
 	top: var(--top) ; 
 	 left:var(--left) ;
 	 width: var(--kuan);
-	background-color: #fff;
+	background-color: #ebebeb;
 	  
 	display: flex;
 	justify-content: center;
