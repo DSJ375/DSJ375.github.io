@@ -63,9 +63,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	
-	animation: yuanshen ease var(--chixushijian);
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+	
 }
 
 @keyframes yuanshen { 
@@ -80,7 +78,9 @@ body {
      } 
 }
 .yuanshen img {
-	
+	animation: yuanshen ease var(--chixushijian);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 	/* width: calc(var(--kuan) *0.4); */
 }
 
