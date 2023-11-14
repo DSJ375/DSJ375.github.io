@@ -14,7 +14,34 @@
 				  };
 				  document.body.onblur = function() {
 				    document.title = "op原神，启动！-DSJIE- ( ゜- ゜)つロ"
-				  };</script>
+				  };
+		// 禁止使用开发者工具（F12）
+		   document.onkeydown = function(e){
+		        if(window.event.keyCode == 123 || e.ctrlKey && e.altKey && e.keyCode == 73){
+		            alert('请尊重开发者的劳动成果，禁止使用F12开发者工具！');
+		            return false;
+		        }
+		    };
+			
+			// 禁止选中文本
+			// document.onselectstart = function(){return false;};
+			
+			// 禁止复制内容
+			// document.oncopy = function(){alert('请尊重开发者的劳动成果，原则上禁止复制内容-DSJIE-工作室！');return false;};
+			
+		//如果复制则添加下面的内容
+	        document.addEventListener("copy", function(e) {
+	            // 阻止默认的复制行为
+	            e.preventDefault();
+				// 弹出提醒框
+				alert("请尊重开发者的劳动成果，原则上禁止复制内容-DSJIE-工作室！");
+	            // 获取选中的文本
+	            var selectedText = window.getSelection().toString();
+	            // 在复制选中的文本后面添加提示信息，并放到剪切板中
+	            e.clipboardData.setData("text/plain", selectedText + "（---此内容来自:https://dsj375.github.io/，请回DSJIE-工作室官网了解更多---）");
+	        });
+		
+		</script>
 		<!-- 音频 -->
 		<audio id="myAudio1"  autoplay >  
 		    <source src="MP3_4/原神启动.mp3" type="audio/mpeg">  
