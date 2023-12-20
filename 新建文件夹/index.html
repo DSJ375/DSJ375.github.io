@@ -4,7 +4,13 @@
   <title>深色模式切换</title>  
   <style>  
    body {  
-         transition: background-color 0.5s;  
+         ransition: background-color 0.5s;
+             display: flex;
+             flex-wrap: wrap;
+             flex-direction: column;
+             align-content: center;
+             justify-content: center;
+             align-items: center;
        }  
        @media (prefers-color-scheme: dark) {  
          :root {  
@@ -31,7 +37,13 @@
 		color: #000;
     }  
 	.jiab {
-		background-color: pink;
+		/* background-color: pink;
+		width: 100%;
+		text-align: center; */
+	}
+	button {
+		width: 100px;
+		height: 100px;
 	}
   </style>  
 </head>  
@@ -39,10 +51,10 @@
 	<div class="yuanshen">
 			<img src="https://dsj375.github.io/op/img/OP.png" alt="OP原神">
 		</div>
-  <button onclick="toggleTheme()">切换主题</button>  
+  <button onclick="toggleTheme()">主题切换</button>  
   
   <div class="jiab">
-	  主题切换
+	  看不见内容请点击“主题切换”即可
   </div>
   
   
