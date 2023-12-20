@@ -1,0 +1,61 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>深色模式切换</title>  
+  <style>  
+   body {  
+         transition: background-color 0.5s;  
+       }  
+       @media (prefers-color-scheme: dark) {  
+         :root {  
+           --background-color: #000;  
+         }  
+         body {  
+           background-color: var(--background-color);  
+         }  
+       }  
+       @media (prefers-color-scheme: light) {  
+         :root {  
+           --background-color: #fff;  
+         }  
+         body {  
+           background-color: var(--background-color);  
+         }  
+       }  
+    .dark-theme {  
+      background-color: #000;  
+	  color: #fff;
+    }  
+    .light-theme {  
+      background-color: #fff;
+		color: #000;
+    }  
+	.jiab {
+		background-color: pink;
+	}
+  </style>  
+</head>  
+<body id="theme" class="">  
+  <button onclick="toggleTheme()">切换主题</button>  
+  
+  <div class="jiab">
+	  主题切换
+  </div>
+  
+  
+  
+  
+  <script>  
+    function toggleTheme() {  
+      var themeElement = document.getElementById("theme");  
+      if (themeElement.classList.contains("dark-theme")) {  
+        themeElement.classList.remove("dark-theme");  
+        themeElement.classList.add("light-theme");  
+      } else {  
+        themeElement.classList.remove("light-theme");  
+        themeElement.classList.add("dark-theme");  
+      }  
+    }  
+  </script>  
+</body>  
+</html>
