@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <title>DSJIE_工作室导航</title>
-    <!-- 如果需要引入外部CSS或JS，可以在这里添加 -->
     <style>
         /* 全局样式 */
         body {
