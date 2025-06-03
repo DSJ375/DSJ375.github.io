@@ -1,11 +1,49 @@
-#欢迎访问DSJIE工作室导航
-<a href="http://www.dsjie375.cn:8090/"><h3>DSJIE_工作室博客：http://www.dsjie375.cn:8090/</h3></a>
-<br />
- <h4><a href="https://dsj375.github.io/op/"> &nbsp; &nbsp; &nbsp; &nbsp; 本域名第一个网站《op原神，启动》：我做的原神网页，打开有一个原神的启动页面，还有语音说:（原神，启动），之后进入一个提瓦特大陆的视频。（点击即可前往网页）</a>
- </h4>
- <br />
- <h4><a href="https://dsj375.github.io/Girlfriends_In_HTML-main/"> &nbsp; &nbsp; &nbsp; &nbsp; 本域名第二个网站《Girlfriends_In》：你的女朋友都在这里。（点击即可前往网页）</a></h4>
-<br />
- <h4><a href="https://dsj375.github.io/yincangdeOP/index.html"> &nbsp; &nbsp; &nbsp; &nbsp; 本域名第三个网站《隐藏的OP》：有隐藏的彩蛋。（点击即可前往网页）</a>
-  <p>2023年12月21日</p>
- </h4>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            flex: 1;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 0;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="http://www.dsjie375.cn:8090" target="_blank">DSJIE工作室博客</a></li>
+            <li><a href="https://www.example.com" target="_blank">示例网站</a></li>
+            <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+            <!-- 添加更多链接 -->
+        </ul>
+    </nav>
+</body>
+</html>
