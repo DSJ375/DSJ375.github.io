@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+
 <html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
-    <title>欢迎访问DSJIE_工作室导航页</title>
     <link rel="stylesheet" href="http://dsjie375.cn/daohang.css">
 
     
