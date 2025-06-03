@@ -23,24 +23,18 @@
         </div>
     </div>
 
-     <div class="container">
-        <h1>《潮动力综合运动馆》</h1>
-        <p>即将上线，尽请期待！</p>
-        <div class="button-group">
-            <a href="#" target="_blank">
-                <button class="navigate-button">点我前往</button>
-            </a>
-        </div>
-    </div>
-
 
     <div class="container">
         <h1>《云存储 DSJIE-NAS》</h1>
-        <p>如果你想使用我的云存储可以免费加入共享（安卓、苹果、win、等等）</p>
+        <p>如果你想使用我的云存储可以免费加入共享（安卓、苹果、win、等等），有教程</p>
         <div class="button-group">
-            <a href="http://www.dsjie375.cn:9999" target="_blank">
-                <button class="navigate-button">点我前往</button>
+            <a href="http://www.dsjie375.cn:8090/archives/ru-he-xia-zai-shi-yong-lu-lian-yun-app" target="_blank">
+                <button class="navigate-button">点我观看教程</button>
             </a>
+            <a href="http://www.dsjie375.cn:9999" target="_blank">
+                <button class="navigate-button">点我前往NAS (电脑访问)</button>
+            </a>
+            
         </div>
     </div>
 
