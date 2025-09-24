@@ -7,7 +7,7 @@
 <body>
     <script>
         // 设置跳转的目标URL
-        const targetUrl = "http://www.dsjie375.cn:8090/1748971710750";
+        const targetUrl = "http://dsjie375.cn";
 
         // 设置延迟时间（毫秒）
         const delay = 0; // 3秒
